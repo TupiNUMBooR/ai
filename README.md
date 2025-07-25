@@ -31,7 +31,9 @@ curl http://localhost:11434/api/pull -d '{
 }'
 ```
 
-### Пробный запрос
+# Использование
+
+[localhost:3001](http://localhost:3001)
 
 ```sh
 curl http://localhost:11434/api/generate -d '{
@@ -41,7 +43,7 @@ curl http://localhost:11434/api/generate -d '{
 }'
 ```
 
-### Доп информация
+# Доп информация
 
 [ollama/docs/api.md at main · ollama/ollama · GitHub](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
