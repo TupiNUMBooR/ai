@@ -23,6 +23,7 @@ docker compose exec ollama ollama pull deepseek-r1:1.5b
 docker compose exec ollama ollama pull deepseek-r1 #:7b
 docker compose exec ollama ollama pull deepseek-r1:70b
 docker compose exec ollama ollama pull mistral-small3.1 # 16.4 GiB RAM
+docker compose exec ollama ollama pull huihui_ai/gemma3-abliterated
 ```
 
 ```sh
