@@ -17,6 +17,7 @@ docker compose exec ollama ollama pull wizard-vicuna-uncensored
 docker compose exec ollama ollama pull wizard-vicuna-uncensored:13b # 14.2 GiB RAM
 docker compose exec ollama ollama pull wizard-vicuna-uncensored:30b # 30.6 GiB RAM
 docker compose exec ollama ollama pull gemma3 #:4b # 2.8 GiB RAM
+docker compose exec ollama ollama pull gemma3:12b
 docker compose exec ollama ollama pull gemma3:27b # 23.6 GiB RAM
 docker compose exec ollama ollama pull gemma3:27b-it-qat # 22.0 GiB RAM
 docker compose exec ollama ollama pull deepseek-r1:1.5b
