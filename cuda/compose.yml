@@ -1,0 +1,13 @@
+services:
+  cuda-test:
+    image: nvidia/cuda:12.4.1-base-ubuntu22.04
+
+    command: nvidia-smi
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+# if it works, you shoud see your gpu in logs
