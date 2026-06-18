@@ -1,3 +1,5 @@
 .idea
 ollama
 open-webui
+node_modules
+local_models
