@@ -59,17 +59,13 @@ curl http://localhost:11434/api/generate -d '{
 [ollama/docs/api.md at main · ollama/ollama · GitHub](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
 ```sh
-curl http://localhost:11434/api/tags > tags.json
-```
-
-```sh
-curl http://localhost:11434/api/show -d '{
-  "model": "mistral-small3.1"
-}' > show.json
-```
-
-```sh
 docker compose exec ollama ollama --help
-docker compose exec ollama ollama show gemma3 --modelfile
+docker compose exec ollama ollama list
+docker compose exec ollama ollama show gemma4 --modelfile
+```
+
+Проверить доступ докера к GPU
+
+```sh
 docker run --rm -it --gpus=all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
