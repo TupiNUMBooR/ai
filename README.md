@@ -36,29 +36,17 @@ docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:31b
 docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:48b
 ```
 
-```sh
-curl http://localhost:11434/api/pull -d '{
-  "model": "gemma3"
-}'
-```
-
 # Использование
 
-[localhost:3001](http://localhost:3001)
-
-```sh
-curl http://localhost:11434/api/generate -d '{
-  "model": "gemma3:4b",
-  "prompt": "Why is the sky blue?",
-  "stream": false
-}'
-```
+[local Open WebUI](http://localhost:3001)
 
 # Доп информация
 
-[ollama/docs/api.md at main · ollama/ollama · GitHub](https://github.com/ollama/ollama/blob/main/docs/api.md)
+- [ollama/docs/api.md at main · ollama/ollama · GitHub](https://github.com/ollama/ollama/blob/main/docs/api.md)
+- [local ollama](http://localhost:11434/api/tags)
 
 ```sh
+docker compose exec ollama bash
 docker compose exec ollama ollama --help
 docker compose exec ollama ollama list
 docker compose exec ollama ollama show gemma4 --modelfile
