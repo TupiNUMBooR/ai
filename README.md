@@ -25,6 +25,7 @@ docker compose exec ollama ollama pull deepseek-r1 #:7b
 docker compose exec ollama ollama pull deepseek-r1:70b
 docker compose exec ollama ollama pull mistral-small3.1 # 16.4 GiB RAM
 docker compose exec ollama ollama pull huihui_ai/gemma3-abliterated
+docker compose exec ollama ollama pull openhermes
 ```
 
 ```sh
@@ -57,4 +58,10 @@ curl http://localhost:11434/api/tags > tags.json
 curl http://localhost:11434/api/show -d '{
   "model": "mistral-small3.1"
 }' > show.json
+```
+
+```sh
+docker compose exec ollama bash
+
+ollama show gemma3 --modelfile
 ```
