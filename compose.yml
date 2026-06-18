@@ -3,7 +3,6 @@ services:
     # https://hub.docker.com/r/ollama/ollama
     # image: ollama/ollama:0.7.0
     image: ollama/ollama:latest
-    container_name: ollama
     restart: always
     ports:
       - "11434:11434"
@@ -18,7 +17,6 @@ services:
   open-webui:
     # image: ghcr.io/open-webui/open-webui:0.6.10
     image: ghcr.io/open-webui/open-webui:latest
-    container_name: open-webui
     restart: always
     depends_on:
       - ollama

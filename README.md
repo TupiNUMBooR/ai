@@ -26,6 +26,14 @@ docker compose exec ollama ollama pull deepseek-r1:70b
 docker compose exec ollama ollama pull mistral-small3.1 # 16.4 GiB RAM
 docker compose exec ollama ollama pull huihui_ai/gemma3-abliterated
 docker compose exec ollama ollama pull openhermes
+docker compose exec ollama ollama pull gemma4
+docker compose exec ollama ollama pull gemma4:31b
+docker compose exec ollama ollama pull gemma4:31b-cloud
+docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated
+docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:12b
+docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:26b
+docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:31b
+docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:48b
 ```
 
 ```sh
@@ -61,7 +69,7 @@ curl http://localhost:11434/api/show -d '{
 ```
 
 ```sh
-docker compose exec ollama bash
-
-ollama show gemma3 --modelfile
+docker compose exec ollama ollama --help
+docker compose exec ollama ollama show gemma3 --modelfile
+docker run --rm -it --gpus=all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
