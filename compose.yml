@@ -8,11 +8,12 @@ services:
       - "11434:11434"
     volumes:
       - ./ollama:/root/.ollama
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities: [gpu]
+    # uncomment if you have good NVIDIA GPU and want to use it for inference
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - capabilities: [gpu]
 
   open-webui:
     # image: ghcr.io/open-webui/open-webui:0.6.10
