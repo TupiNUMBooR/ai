@@ -10,12 +10,5 @@ indent_style = space
 indent_size = 2
 tab_width = 4
 
-# Intellij
-ij_visual_guides = 80
-ij_any_blank_lines_after_class_header = 1
-ij_java_keep_simple_classes_in_one_line = true
-ij_java_keep_simple_methods_in_one_line = true
-ij_java_keep_simple_lambdas_in_one_line = true
-
-[*.{cs,java,py,xml}]
-indent_size = 4
+[*.md]
+trim_trailing_whitespace = false
