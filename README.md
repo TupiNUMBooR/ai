@@ -36,6 +36,19 @@ docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:31b
 docker compose exec ollama ollama pull huihui_ai/gemma-4-abliterated:48b
 ```
 
+# Список моделей
+
+```sh
+docker compose exec ollama ollama list
+```
+
+# Обновить все модели
+
+```sh
+docker compose exec -T ollama sh -c \
+  'ollama list | awk "NR>1 {print \$1}" | xargs -r -n1 ollama pull'
+```
+
 # Использование
 
 [local Open WebUI](http://localhost:3001)
