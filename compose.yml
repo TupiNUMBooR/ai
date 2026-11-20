@@ -1,7 +1,6 @@
 services:
   ollama:
     # https://hub.docker.com/r/ollama/ollama
-    # image: ollama/ollama:0.7.0
     image: ollama/ollama:latest
     restart: always
     ports:
@@ -16,7 +15,6 @@ services:
     #         - capabilities: [gpu]
 
   open-webui:
-    # image: ghcr.io/open-webui/open-webui:0.6.10
     image: ghcr.io/open-webui/open-webui:latest
     restart: always
     depends_on:
